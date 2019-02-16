@@ -1,0 +1,75 @@
+/* p {
+  color: rgb(173, 157, 13);
+  width: 500px;
+  border: 1px solid rgb(0, 0, 0);
+} */
+/* 整个结构为  规则集 */
+/* p元素--选择器（selector） */
+/* color：red -- 声明，一个单独的规则，用来指定添加样式元素的属性 */
+/* color就是 《p》元素的属性，改变html元素样式的途径 */
+/* red ，冒号后面即为 属性的值 */
+
+/* li, h1 {
+  color: red;
+} */
+/* 也可以选择多种类型的元素，添加一组相同的样式 */
+
+/* 实际上  选择器  可以更加具体， */
+
+html {
+  /* px 表示 “像素（pixels）”: 基础字号为 10 像素 */
+  font-size: 10px; 
+  /* Google fonts 输出的 CSS */
+  font-family: 'Open Sans', sans-serif; 
+}
+/* 选择器 选择了 html，整个页面的父元素 */
+
+h1 {
+  font-size: 60px;
+  text-align: center;  
+}
+/* 设置标题居中 */
+p, li {
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+}
+/* 为正文设置行高和字间距，从而提高页面的可读性。 */
+
+/* CSS 布局主要就是基于盒模型的。每个占据页面空间的块都有这样的属性：
+
+padding：即内边距，围绕着内容（比如段落）的空间。
+border：即边框，紧接着内边距的线。
+margin：即外边距，围绕元素外部的空间。
+
+        这里还使用了：
+width ：元素的宽度
+background-color ：元素内容和内边距底下的颜色
+color ：元素内容（通常是文本）的颜色
+text-shadow ：为元素内的文本设置阴影
+display ：设置元素的显示模式（暂略） */
+html {
+  background-color: #00539F;
+}
+body {
+  width: 600px;
+  margin: 0 auto;  /*如果只有两个值，第一个表示上方，第二个表示下方，如果是 4个值，则代表上、右、下、左*/ 
+  background-color: #FF9500;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;  
+}
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #00539F;
+  text-shadow: 3px 3px 1px black;   /*text-shadow属性*/
+}
+/* 需要注意的是，这里使用了一个 text-shadow 属性，它可以为元素中的文本提供阴影。四个值含义如下：
+第一个值设置水平偏移值 —— 即阴影右移的像素数（负值左移）。
+第二个值设置垂直偏移值 —— 即阴影下移的像素数（负值上移）。
+第三个值设置阴影的模糊半径 —— 值越大产生的阴影越模糊。
+第四个值设置阴影的基色。 */
+img {
+  display: block;
+  margin: 0 auto;
+}
